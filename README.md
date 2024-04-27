@@ -4,8 +4,9 @@ A simple function to convert CSS-styled HTML to a "single-page web page", which 
 
 ## Demo
 
-Online:
-(To do)
+Online: lower right button [here](https://3willows.github.io/barAdmission/)
+
+(Dedicated demo to follow)
 
 On your local machine:
 
@@ -20,15 +21,15 @@ npm run test
 ```js
 import {htmlCssExportWord} from "html-css-export-word"
 
- <div className="hidden">
-        <ComponentToPrint ref={sourceRef} id="source-html" />
-      </div>
-      <button onClick={() => htmlCssExportWord(sourceRef, cssFile, "exported-document.doc")}>
-        Download as Word.doc file
-      </button>
+<div className="hidden">
+    <ComponentToPrint ref={sourceRef} id="source-html" />
+</div>
+<button onClick={() => htmlCssExportWord(sourceRef, cssFile, "exported-document.doc")}>
+    Download as Word.doc file
+</button>
 ```
 
-(To further elaborate)
+(Detailed tutorial to follow)
 
 ## Motivation
 
