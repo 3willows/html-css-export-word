@@ -38,3 +38,11 @@ import {htmlCssExportWord} from "html-css-export-word"
 There are already a lot of similiar tools out there. I summarise some of them in this [Stack Overflow answer](https://stackoverflow.com/a/78373506/19767032).
 
 This particular npm package is essentially a port of [jQuery-Export-Word](https://github.com/markswindoll/jQuery-Word-Export), only with the jQuery-specific syntax removed, and the image-processing functionality removed altogether.
+
+## How it works
+
+(To follow)
+
+## Limitations
+
+Microsoft Word cannot correct display many CSS features.  In particular, neither flexbox nor grid is supported.  I have considered adding support by using polyfills (with [flexibility](https://github.com/FremyCompany/css-grid-polyfill) for flex and [css-grid-polyfill](https://github.com/jonathantneal/flexibility) for grid): but have not decided whether to spend the time to do so.
