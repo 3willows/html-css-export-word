@@ -37,7 +37,5 @@ export function htmlCssExportWord(
     type: "application/msword;charset=utf-8",
   })
   saveAs(blob, filename)
-
-  console.log("hi")
 }
 
