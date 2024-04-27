@@ -1,4 +1,4 @@
-// import { saveAs } from "file-saver"
+const saveAs = require("file-saver")
 
 function htmlCssExportWord(
   sourceRef,
