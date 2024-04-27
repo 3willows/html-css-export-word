@@ -1,4 +1,4 @@
-// import { saveAs } from "file-saver"
+import { saveAs } from "file-saver"
 
 function htmlCssExportWord(
   sourceRef,

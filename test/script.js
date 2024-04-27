@@ -1,4 +1,4 @@
-const htmlCssExportWord = require("html-css-export-word")
+import htmlCssExportWord from "../index.js"
 
 const html = `<h1>Hello World!</h1>
 <body>
