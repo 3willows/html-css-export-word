@@ -4,7 +4,7 @@ A simple function to convert CSS-styled HTML to a "single-page web page", which 
 
 ## Demo
 
-Online: lower right button [here](https://3willows.github.io/barAdmission/)
+Online: lower right hand corner button [here](https://3willows.github.io/barAdmission/#/info)
 
 (Dedicated demo to follow)
 
