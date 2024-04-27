@@ -4,6 +4,11 @@
   "description": "Rough and ready way to convert CSS-styled HTML to Word",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://github.com/3willows/html-css-export-word/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3willows/html-css-export-word"
+  },
   "scripts": {
     "test": "cd demo && npm i && npm run dev"
   },
