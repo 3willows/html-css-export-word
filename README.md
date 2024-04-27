@@ -1,12 +1,12 @@
 # html-css-export-word
 
-A simple function to convert CSS-styled HTML to a "single-page web page", which cam be opened, edited, and saved on Microsoft Word for Mac.
+A function that converts CSS-styled HTML to a "single-page web page", which can be opened, edited, and saved on Microsoft Word for Mac.
 
 ## Demo
 
-Online: lower right hand corner button [here](https://3willows.github.io/barAdmission/#/info)
+[Online](https://3willows.github.io/barAdmission/#/info): click on the lower right hand corner button
 
-(Dedicated demo to follow)
+(Dedicated demo (with iframe for user-created HTML and CSS) to follow)
 
 On your local machine:
 
@@ -14,7 +14,9 @@ On your local machine:
 npm run test
 ```
 
-(Installs and opens a Vite website on your local machine. The HTML is in "ComponentToPrint.jsx" and the function is called in "App.jsx".)
+(Installs and opens a Vite website on your local machine.)
+
+(The HTML is in "ComponentToPrint.jsx" and the function is called in "App.jsx".)
 
 ## Usage
 
