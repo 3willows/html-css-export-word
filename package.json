@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Rough and ready way to convert CSS-styled HTML to Word",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd demo && npm i && npm run dev"
   },
   "dependencies": {
     "file-saver": "^2.0.5"
