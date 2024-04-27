@@ -1,6 +1,6 @@
 {
   "name": "html-css-export-word",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rough and ready way to convert CSS-styled HTML to Word",
   "main": "index.js",
   "type": "module",
