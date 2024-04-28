@@ -46,3 +46,9 @@ This particular npm package is essentially a port of [jQuery-Export-Word](https:
 ## Limitations
 
 Microsoft Word cannot correct display many CSS features.  In particular, neither flexbox nor grid is supported.  I have considered adding support by using polyfills (with [flexibility](https://github.com/FremyCompany/css-grid-polyfill) for flex and [css-grid-polyfill](https://github.com/jonathantneal/flexibility) for grid): but have not decided whether to spend the time to do so.
+
+## Issues/suggestions/contibution/feature request
+
+Under active development by rubbercapybara until at least 1 June 2024.
+
+Issues/suggestions/contributions/feature request: open [Github issue] on (https://github.com/3willows/html-css-export-word/issues) or email rubbercapybara@gmail.com 
