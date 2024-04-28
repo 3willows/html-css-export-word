@@ -51,4 +51,4 @@ Microsoft Word cannot correct display many CSS features.  In particular, neither
 
 Under active development by rubbercapybara until at least 1 June 2024.
 
-Issues/suggestions/contributions/feature request: open [Github issue] on (https://github.com/3willows/html-css-export-word/issues) or email rubbercapybara@gmail.com 
+Issues/suggestions/contributions/feature request: open [Github issue](https://github.com/3willows/html-css-export-word/issues) or email rubbercapybara@gmail.com 
