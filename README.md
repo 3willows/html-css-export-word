@@ -79,12 +79,12 @@ import {htmlCssExportWord} from "html-css-export-word"
 - I have yet to consider a systematic way on testing on different devices. Based on anecodtal reports.
 
 - Does not work on:
-  -- Mobile
-  -- Linux ubuntu 24.04 + Chrome
+  - Mobile
+  - Linux ubuntu 24.04 + Chrome
 
 - Works on:
-  -- Windows 11 + Chrome
-  -- Mac 14.4.1 + Chrome + Firefoox
+  - Windows 11 + Chrome
+  - Mac 14.4.1 + Chrome + Firefoox
 
 ## Limitations
 
