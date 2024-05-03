@@ -20,13 +20,14 @@ npm run test
 
 ## Usage
 
+# React
 ```js
 import {htmlCssExportWord} from "html-css-export-word"
 
 <div className="hidden">
     <ComponentToPrint ref={sourceRef} id="source-html" />
 </div>
-<button onClick={() => htmlCssExportWord(sourceRef, cssFile, "exported-document.doc")}>
+<button onClick={() => htmlCssExportWord(sourceRef.current.innerHTML, cssFile, "exported-document.doc")}>
     Download as Word.doc file
 </button>
 ```
