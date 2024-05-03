@@ -1,12 +1,10 @@
 import saveAs from "file-saver"
 
 export function htmlCssExportWord(
-  sourceRef,
+  html,
   styles = "",
   filename = "exported-document.doc"
 ) {
-  const sourceHTML = sourceRef.current.innerHTML
-
   const statiC = {
     mhtml: {
       top:
@@ -29,7 +27,7 @@ export function htmlCssExportWord(
     statiC.mhtml.top.replace(
       "_html_",
       statiC.mhtml.head.replace("_styles_", styles) +
-        statiC.mhtml.body.replace("_body_", sourceHTML)
+        statiC.mhtml.body.replace("_body_", html)
     ) + mhtmlBottom
 
   // Create a Blob with the file contents

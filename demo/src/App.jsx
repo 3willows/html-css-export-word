@@ -11,7 +11,7 @@ function App() {
       <div className="hidden">
         <ComponentToPrint ref={sourceRef} id="source-html" />
       </div>
-      <button onClick={() => htmlCssExportWord(sourceRef)}>
+      <button onClick={() => htmlCssExportWord(sourceRef.current.innerHTML)}>
         Download as Word.doc file
       </button>
     </>
