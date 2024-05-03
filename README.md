@@ -67,7 +67,7 @@ import {htmlCssExportWord} from "html-css-export-word"
 
 4. Creating Blob:
 
-- The functioon then creates a Blob (Binary Large Object) containing the MHTML content. A Blob represents raw data and can be of any type.
+- The function then creates a Blob (Binary Large Object) containing the MHTML content. A Blob represents raw data and can be of any type.
 - The Blob constructor takes two parameters: an array containing the data, and an options object specifying the MIME type: in this case `application/msword;charset=utf-8`.
 
 5. Saving the File:
