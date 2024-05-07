@@ -94,7 +94,7 @@ import {htmlCssExportWord} from "html-css-export-word"
 ## To do
 
 - Dedicated online demo (with iframe for user-created HTML and CSS)
-- Detailed tutorial for plain HTML.
+- Detailed tutorial for plain HTML
 - Consider how to properly test: with virtual machines? By reading the relevant documentation?
 - Change test script: even though it is innocuous, [socket.dev](https://socket.dev/npm/package/html-css-export-word/overview/0.0.11) sees the install scripts as a supply chain vulnerability.
 
@@ -102,6 +102,9 @@ import {htmlCssExportWord} from "html-css-export-word"
 
 - Under active development by rubbercapybara until at least 1 June 2024.
 
-- Issues/comments: open [Github issue](https://github.com/3willows/html-css-export-word/issues) or email rubbercapybara@gmail.com.
+- Issues/comments:
+  
+    - comment on this [Code Review Stack Exchange question](https://codereview.stackexchange.com/questions/291920/convert-css-styled-html-to-word-file-without-a-server)
+    - open [Github issue](https://github.com/3willows/html-css-export-word/issues)
 
 - As explained in this [post](https://dev.to/andyrichardsonn/how-i-exploited-npm-downloads-and-why-you-shouldn-t-trust-them-4bme), npm downloads are not an accurate guide to actual usage. If you are a human who actually tried this tool, say hi by opening issue/sending email!
