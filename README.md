@@ -96,6 +96,7 @@ import {htmlCssExportWord} from "html-css-export-word"
 - Dedicated online demo (with iframe for user-created HTML and CSS)
 - Detailed tutorial for plain HTML.
 - Consider how to properly test: with virtual machines? By reading the relevant documentation?
+- Change test script: even though it is innocuous, [socket.dev](https://socket.dev/npm/package/html-css-export-word/overview/0.0.11) sees the install scripts as a supply chain vulnerability.
 
 ## Contact
 
