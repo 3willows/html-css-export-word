@@ -78,7 +78,7 @@ import {htmlCssExportWord} from "html-css-export-word"
 
 - I have yet to consider a systematic way on testing on different devices. Based on anecodtal reports.
 
-- Does not work on:
+- Does *not* work on:
   - Mobile
   - Linux ubuntu 24.04 + Chrome
 
@@ -95,9 +95,9 @@ import {htmlCssExportWord} from "html-css-export-word"
 
 - Dedicated online demo (with iframe for user-created HTML and CSS)
 - Detailed tutorial for plain HTML
-- Consider how to properly test: with virtual machines? By reading the relevant documentation?
 - Change test script: even though it is innocuous, [socket.dev](https://socket.dev/npm/package/html-css-export-word/overview/0.0.11) sees the install scripts as a supply chain vulnerability.
-
+- (Possible future modification, inspired by a conversation with [Georgios Christou](linkedin.com/in/georgioschristou)) add an optional 4th argument so that user can download data in different [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_Types).
+  
 ## Contact
 
 - Under active development by rubbercapybara until at least 1 June 2024.
