@@ -16,15 +16,15 @@ On the choice of .doc over .docx, see this [article](https://github.com/metanorm
 
 ## Demo
 
-[Interactive demo](https://3willows.github.io/html-css-export-word-demo/): enter html and css and download the resulting Word file. 
+[Interactive demo](https://3willows.github.io/html-css-export-word-demo/): enter html and css and download the resulting Word file. ([Source code]())
+
 [Example in use](https://3willows.github.io/barAdmission/#/info): the "Download as Word.doc file" button at the lower right corner.
 
 On your local machine:
 
 ```bash
 npm run test
-# Installs and opens a Vite website on your local machine.
-# See "demo/src/ComponentToPrint.jsx"and "demo/src/App.jsx".
+# Installs and opens the Interactive Demo on your local machine.
 ```
 
 ## Usage
