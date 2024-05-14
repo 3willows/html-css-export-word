@@ -16,7 +16,8 @@ On the choice of .doc over .docx, see this [article](https://github.com/metanorm
 
 ## Demo
 
-[Online](https://3willows.github.io/barAdmission/#/info): click on the lower right hand corner button
+[Interactive demo](https://3willows.github.io/html-css-export-word-demo/): enter html and css and download the resulting Word file. 
+[Example in use](https://3willows.github.io/barAdmission/#/info): the "Download as Word.doc file" button at the lower right corner.
 
 On your local machine:
 
