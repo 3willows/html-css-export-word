@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML and CSS Editor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    #large-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: flex-end;
+    }
+
+    #container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    textarea,
+    iframe {
+      width: 33%;
+      height: 500px;
+      font-size: x-large;
+      border: 4mm ridge black;
+      box-sizing: border-box;
+    }
+
+    button {
+      border: 4mm ridge black;
+      font-size: xx-large
+    }
+  </style>
+</head>
+
+<body>
+  <div id="large-container">
+    <div id="container">
+      <textarea label="html" id="htmlInput"><h1>hello</h1></textarea>
+      <textarea id="cssInput">*{color: red}</textarea>
+      <iframe id="result"></iframe>
+    </div>
+    <button>Download Word document</button>
+  </div>
+  <script src="
+https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js
+"></script>
+  <script type="module" src="./plainDemo.js"></script>
+</body>
+
+</html>
