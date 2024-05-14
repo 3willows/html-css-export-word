@@ -1,4 +1,4 @@
-import {htmlCssExportWord} from "./index.js"
+import {htmlCssExportWord} from "html-css-export-word"
 
 const htmlInput = document.getElementById("htmlInput")
 const cssInput = document.getElementById("cssInput")
@@ -19,6 +19,6 @@ cssInput.addEventListener("input", updateResult)
 
 button.addEventListener("click", ()=>{
   console.log("hihi")
-  // htmlCssExportWord(htmlInput, cssInput)
+  htmlCssExportWord(htmlInput.value, cssInput.value)
 })
 window.onload = updateResult()
