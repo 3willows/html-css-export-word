@@ -4,6 +4,7 @@ const htmlInput = document.getElementById("htmlInput")
 const cssInput = document.getElementById("cssInput")
 const result = document.getElementById("result").contentWindow.document
 
+const input = document.querySelector("input")
 const button = document.querySelector("button")
 
 function updateResult() {
@@ -19,6 +20,6 @@ cssInput.addEventListener("input", updateResult)
 
 button.addEventListener("click", ()=>{
   console.log("hihi")
-  htmlCssExportWord(htmlInput.value, cssInput.value)
+  htmlCssExportWord(htmlInput.value, cssInput.value, input.value)
 })
 window.onload = updateResult()
