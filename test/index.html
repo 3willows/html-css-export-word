@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo for html-css-export-word</title>
+  <link rel="icon" type="image/x-icon" href="lawFavicon.ico">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .vertical-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 33.33%;
+      max-width: 33.33%;
+      box-sizing: border-box;
+    }
+
+    textarea,
+    iframe {
+      margin-top: 0%;
+      height: 500px;
+      font-size: large;
+      border: 4mm ridge black;
+      box-sizing: border-box;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: x-large;
+      font-weight: bold;
+    }
+
+    input {
+      margin-top: 10px;
+      font-size: x-large;
+    }
+
+    button {
+      text-align: left;
+      font-weight: bold;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      font-size: x-large;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="vertical-container">
+      <p>HTML</p>
+      <textarea id="htmlInput"><div><h1>Welcome to My Page</h1><p>This is a sample page created using HTML and CSS.</p></div>   
+      </textarea>
+    </div>
+    <div class="vertical-container">
+      <p>CSS</p>
+      <textarea id="cssInput">body { font-family: Arial, sans-serif; background-color: #f0f0f0; } div{width: 80%; margin: 20px auto; background-color: #fef; padding: 20px;} h1 { color: #951; } p { color: #159; }</textarea>
+    </div>
+    <div class="vertical-container">
+      <p>Result</p>
+      <iframe id="result"></iframe>
+    </div>
+  </div>
+  <input type="text" placeholder="Enter name of Word document (optional)">
+  <button>Download Word document</button>
+  <script src="
+https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js
+"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
