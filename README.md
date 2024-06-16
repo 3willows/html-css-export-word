@@ -20,16 +20,11 @@ On the choice of .doc over .docx, see this [article](https://github.com/metanorm
 
 [Example in use](https://3willows.github.io/barAdmission/#/info): the "Download as Word.doc file" button at the lower right corner.
 
-On your local machine:
-
-```bash
-npm run test
-# Installs and opens the Interactive Demo on your local machine.
-```
+To test on your local machine, open test.html with your browser.
 
 ## Usage
 
-### React
+### React (prior to React 19)
 
 ```jsx
 import {htmlCssExportWord} from "html-css-export-word"
@@ -39,10 +34,41 @@ import {htmlCssExportWord} from "html-css-export-word"
 </div>
 <button onClick={() => {
     htmlCssExportWord(
-    sourceRef.current.innerHTML, cssFile, 
+    sourceRef.current.innerHTML, cssFile,
     "exported-document.doc")}}>
     Download as Word.doc file
 </button>
+```
+
+### Plain html
+
+```js
+const htmlInput = document.getElementById("htmlInput")
+const cssInput = document.getElementById("cssInput")
+const result = document.getElementById("result").contentWindow.document
+
+const input = document.querySelector("input")
+const button = document.querySelector("button")
+
+function updateResult() {
+  result.open()
+  result.write(
+    `<html><head><style>${cssInput.value}</style></head><body>${htmlInput.value}</body></html>`
+  )
+  result.close()
+}
+
+htmlInput.addEventListener("input", updateResult)
+cssInput.addEventListener("input", updateResult)
+
+button.addEventListener("click", () => {
+  if (isMobile) {
+    alert("The download to Word function is designed for desktop use only.")
+    return
+  }
+  htmlCssExportWord(htmlInput.value, cssInput.value, input.value)
+})
+window.onload = updateResult()
 ```
 
 ## How it works
@@ -79,7 +105,8 @@ import {htmlCssExportWord} from "html-css-export-word"
 
 - I have yet to consider a systematic way on testing on different devices. Based on anecodtal reports.
 
-- Does *not* work on:
+- Does _not_ work on:
+
   - Mobile
   - Linux ubuntu 24.04 + Chrome
 
@@ -94,18 +121,10 @@ import {htmlCssExportWord} from "html-css-export-word"
 
 ## To do
 
-- Dedicated online demo (with iframe for user-created HTML and CSS)
-- Detailed tutorial for plain HTML
-- Change test script: even though it is innocuous, [socket.dev](https://socket.dev/npm/package/html-css-export-word/overview/0.0.11) sees the install scripts as a supply chain vulnerability.
 - (Possible future modification, inspired by a conversation with [Georgios Christou](linkedin.com/in/georgioschristou)) add an optional 4th argument so that user can download data in different [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_Types).
-  
+
 ## Contact
 
-- Under active development by rubbercapybara until at least 1 June 2024.
-
 - Issues/comments:
-  
-    - comment on this [Code Review Stack Exchange question](https://codereview.stackexchange.com/questions/291920/convert-css-styled-html-to-word-file-without-a-server)
-    - open [Github issue](https://github.com/3willows/html-css-export-word/issues)
-
-- As explained in this [post](https://dev.to/andyrichardsonn/how-i-exploited-npm-downloads-and-why-you-shouldn-t-trust-them-4bme), npm downloads are not an accurate guide to actual usage. If you are a human who actually tried this tool, say hi by opening issue/sending email!
+   - open [Github issue](https://github.com/3willows/html-css-export-word/issues) or make pull request!
+ - comment on this [Code Review Stack Exchange question](https://codereview.stackexchange.com/questions/291920/convert-css-styled-html-to-word-file-without-a-server)
