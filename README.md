@@ -6,11 +6,15 @@ A function that converts CSS-styled HTML to a "single-page web page", which can 
 
 This is a port of [jQuery-Export-Word](https://github.com/markswindoll/jQuery-Word-Export), only with the jQuery-specific syntax removed, and the image-processing functionality removed. The hard work was already done by [Mark Swindoll](https://github.com/markswindoll) 10 years ago in 2014.
 
+## Acknowledgement
+
+[Code Review Stack Exchange](https://codereview.stackexchange.com/questions/291920/convert-css-styled-html-to-word-file-without-a-server).
+
 ## Other tools
 
-My research on other similiar existing tools are in this [Stack Overflow answer](https://stackoverflow.com/a/78373506/19767032).
+My research on other similar existing tools are in this [Stack Overflow answer](https://stackoverflow.com/a/78373506/19767032).
 
-Specially, on the server side, [pandoc-server](https://pandoc.org/pandoc-server.html) in pandoc is worth considering. But it comes with some extra costs as elaborated in my answer [above](https://stackoverflow.com/a/78373506/19767032).
+Specifically, on the server side, [pandoc-server](https://pandoc.org/pandoc-server.html) in pandoc is worth considering. But it comes with some extra costs as elaborated in my answer [above](https://stackoverflow.com/a/78373506/19767032).
 
 On the choice of .doc over .docx, see this [article](https://github.com/metanorma/html2doc/wiki/Why-not-docx%3F) for [this Ruby tool](https://github.com/metanorma/html2doc).
 
@@ -103,7 +107,7 @@ window.onload = updateResult()
 
 ## Compatibility
 
-- I have yet to consider a systematic way on testing on different devices. Based on anecodtal reports.
+- I have yet to consider a systematic way on testing on different devices. Based on anecdotal reports.
 
 - Does _not_ work on:
 
@@ -112,19 +116,13 @@ window.onload = updateResult()
 
 - Works on:
   - Windows 11 + Chrome
-  - Mac 14.4.1 + Chrome + Firefoox
+  - Mac 14.4.1 + Chrome + Firefox
 
 ## Limitations
 
-- Microsoft Word cannot correct display many CSS features. In particular, neither flexbox nor grid is supported.
+- Microsoft Word cannot correctly display many CSS features. In particular, neither flexbox nor grid is supported.
 - I have considered adding support by using polyfills (with [flexibility](https://github.com/FremyCompany/css-grid-polyfill) for flex and [css-grid-polyfill](https://github.com/jonathantneal/flexibility) for grid): but have not decided whether to spend the time to do so.
 
 ## To do
 
 - (Possible future modification, inspired by a conversation with [Georgios Christou](linkedin.com/in/georgioschristou)) add an optional 4th argument so that user can download data in different [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_Types).
-
-## Contact
-
-- Issues/comments:
-   - open [Github issue](https://github.com/3willows/html-css-export-word/issues) or make pull request!
- - comment on this [Code Review Stack Exchange question](https://codereview.stackexchange.com/questions/291920/convert-css-styled-html-to-word-file-without-a-server)
